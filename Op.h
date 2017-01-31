@@ -7,7 +7,7 @@ using namespace std;
 #ifndef OP
 #define OP
 
-class Op
+class Op: public Base
 {
 	public:
 	double x;

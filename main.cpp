@@ -16,10 +16,10 @@ int main() {
 	Op* op3 = new Op(3);
 	Op* op2 = new Op(2);
 	Mult* A = new Mult(op7, op4);
-	/*
 	Add* B = new Add(op3, A);
-	Sub* C = new Sub(B, op2);
-	Sqr* D = new Sqr(C);
+	//Sub* C = new Sub(B, op2);
+	//Sqr* D = new Sqr(C);
+	/*
 	VectorContainer* container = new VectorContainer();
 	container->add_element(A);
 	container->add_element(B);
