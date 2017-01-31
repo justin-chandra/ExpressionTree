@@ -9,8 +9,8 @@ class Sqr: public Base
 {
 	public:
 		virtual double evaluate()
-		{
-
+		{ 
+			return 0;
 		}
 
 };

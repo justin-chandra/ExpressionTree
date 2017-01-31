@@ -2,6 +2,11 @@
 
 using namespace std;
 
+#include "Base.h"
+
+#ifndef OP
+#define OP
+
 class Op
 {
 	public:
@@ -11,3 +16,5 @@ class Op
 			this->x = x;
 		}
 };
+
+#endif

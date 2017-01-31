@@ -9,7 +9,7 @@ class Subtract: public Base
 		virtual double evaluate()
 		{
 						
-			return ;
+			return 0;
 		}
 		
 	private:		

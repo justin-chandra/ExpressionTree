@@ -8,7 +8,7 @@ class Divide: public Base
 	public:
 		virtual double evaluate()
 		{
-
+			return 0;
 		}
 
 	private:
