@@ -8,6 +8,17 @@ using namespace std;
 class Sqr: public Base
 {
 	public:
+
+		Sqr()
+		{
+
+		}
+
+		Sqr(Base * a, Base * b)
+		{
+
+		}
+
 		virtual double evaluate()
 		{ 
 			return 0;

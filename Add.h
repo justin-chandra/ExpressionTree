@@ -5,5 +5,16 @@ using namespace std;
 
 class Add: public Base 
 {
-	
+	public:
+		Add()
+		{
+		
+		}
+
+		Add(Base * a, Base *b)
+		{
+
+		}
+
+		virtual double evaluate();	
 };
