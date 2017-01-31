@@ -7,13 +7,7 @@ class Sub: public Base
 {
 	public:
 		double x;
-		double y; //subtract y from x
-		
-		Sub(Op * a, Op *b)
-		{
-			this->x = a->evaluate();
-			this->y = b->evaluate();
-		}		
+		double y; //subtract y from x	
 
 		Sub(Base * a, Base * b)
 		{
