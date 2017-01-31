@@ -57,12 +57,12 @@ void VectorContainer::swap(int i, int j)
 	//take a look at swap(), google it
 }
 
-VectorContainer::Base* at(int i)
+Base * VectorContainer::at(int i)
 {
 	return NULL;
 }
 
-VectorContainer::int size()
+int VectorContainer::size()
 {
 	return 0;
 }
