@@ -2,6 +2,8 @@
 
 using namespace std;
 
+#ifndef CONT
+#define CONT
 
 class Container {
 	protected:
@@ -29,3 +31,5 @@ class Container {
 		//            // return container size
 		virtual int size() = 0;
 };
+
+#endif

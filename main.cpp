@@ -9,6 +9,10 @@ using namespace std;
 #include "Op.h"
 #include "Sqr.h"
 #include "Sub.h"
+#include "Container.h"
+#include "ListContainer.h"
+#include "Sort.h"
+#include "VectorContainer.h"
 
 int main() {
 	Op* op7 = new Op(7);
