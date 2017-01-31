@@ -10,10 +10,14 @@ using namespace std;
 class Op
 {
 	public:
-	int x;
+	double x;
 		Op(int x)
 		{
 			this->x = x;
+		}
+		virtual double evaluate()
+		{
+			return x;
 		}
 };
 
