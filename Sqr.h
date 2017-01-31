@@ -20,8 +20,8 @@ class Sqr: public Base
 		}
 
 		virtual double evaluate()
-		{
-
+		{ 
+			return 0;
 		}
 
 };

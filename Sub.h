@@ -26,6 +26,5 @@ class Sub: public Base
 			return x - y;
 		}
 		
-	private:		
 
 };
