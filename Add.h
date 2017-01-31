@@ -18,5 +18,8 @@ class Add: public Base
 
 		}
 
-		virtual double evaluate();
+		virtual double evaluate()
+		{
+			return 0;
+		}
 };
