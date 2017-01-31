@@ -12,12 +12,13 @@ void set_sort_function(Sort* sort_function)
 	return;
 }
 
-virtual void add_element(Base* element)
+void add_element(Base* element)
 {
-
+	//iterate through trees and output values
+	return;
 }
 
-virtual void print()
+void print()
 {
 	try
 	{
@@ -32,28 +33,28 @@ virtual void print()
 		return;
 	}
 
-	
-
-
+	//iterate through tree and output values	
+	return;
 }
 
-virtual void sort()
+void sort()
 {
-
-
+	//I'm guessing you sort with the specified sorting algorithm
+	return;
 }
 
-virtual void swap(int i, int j)
+void swap(int i, int j)
 {
-
+	//get top ptr of tree at index i
+	return;
 }
 
-virtual Base* at(int i)
+Base* at(int i)
 {
-
+	//return container size
 }
 
-virtual int size()
+int size()
 {
 
 }

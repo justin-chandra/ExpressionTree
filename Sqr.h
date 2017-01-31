@@ -14,7 +14,7 @@ class Sqr: public Base
 			this->x = a->evaluate();
 		}
 
-		virtual double evaluate()
+		double evaluate()
 		{ 
 			return x * x;
 		}

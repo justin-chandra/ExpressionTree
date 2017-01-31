@@ -13,7 +13,7 @@ class Div: public Base
 			this->x = a->evaluate();
 			this->y = b->evaluate();
 		}
-		virtual double evaluate()
+		double evaluate()
 		{
 			return x / y;
 		}

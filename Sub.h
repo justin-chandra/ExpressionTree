@@ -15,7 +15,7 @@ class Sub: public Base
 			this->y = b->evaluate();
 		}
 
-		virtual double evaluate()
+		double evaluate()
 		{			
 			return x - y;
 		}
