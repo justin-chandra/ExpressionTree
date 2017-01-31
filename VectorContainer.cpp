@@ -18,7 +18,6 @@ VectorContainer::VectorContainer(Sort* function)
 void VectorContainer::set_sort_function(Sort* sort_function)
 {
 	this->sort_function = sort_function; 	
-	return;
 }
 
 void VectorContainer::add_element(Base* element)
@@ -55,18 +54,15 @@ void VectorContainer::sort()
 
 void VectorContainer::swap(int i, int j)
 {
-	//get top ptr of tree at index i
-	return;
+	//take a look at swap(), google it
 }
-/*
-   VectorContainer::Base* at(int i)
-   {
-   return container size
-   }
- */
-/*
-   VectorContainer::int size()
-   {
 
-   }
- */
+VectorContainer::Base* at(int i)
+{
+	return NULL;
+}
+
+VectorContainer::int size()
+{
+	return 0;
+}
