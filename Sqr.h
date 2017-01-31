@@ -8,20 +8,15 @@ using namespace std;
 class Sqr: public Base
 {
 	public:
-
-		Sqr()
+		double x;
+		Sqr(Base * a)
 		{
-
-		}
-
-		Sqr(Base * a, Base * b)
-		{
-
+			this->x = a->evaluate();
 		}
 
 		virtual double evaluate()
 		{ 
-			return 0;
+			return x * x;
 		}
 
 };

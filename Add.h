@@ -7,19 +7,16 @@ using namespace std;
 class Add: public Base 
 {
 	public:
-		/*
-		Add()
-		{
-
-		}
-		*/
+		double x;
+		double y;
 		Add(Base * a, Base * b)
 		{
-
+			this->x = a->evaluate();
+			this->y = b->evaluate();
 		}
 
 		virtual double evaluate()
 		{
-			return 0;
+			return x + y;
 		}
 };
