@@ -17,7 +17,7 @@ class Container {
 		/* Non Virtual Functions */
 		void set_sort_function(Sort* sort_function)
 		{
-			
+			this->sort_function = sort_function;	
 		} 
 		// set the type of
 		//sorting algorithm

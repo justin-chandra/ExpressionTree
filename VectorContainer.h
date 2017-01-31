@@ -11,8 +11,8 @@ class VectorContainer: public Container
 
 	public:
 	//Constructors
-	VectorContainer() : sort_function(NULL){};
-	VectorContainer(Sort* function) : sort_function(function) {}; // set the type of sorting algorithm
+	VectorContainer(){};
+	VectorContainer(Sort* function){}; // set the type of sorting algorithm
 
 	//Non Virtual functions
 	void set_sort_function(Sort* sort_function); // set the type of sorting algorithm

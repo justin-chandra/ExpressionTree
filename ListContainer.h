@@ -9,8 +9,11 @@ using namespace std;
 
 class ListContainer: public Container
 {
-	ListContainer() : sort_function(NULL) {};
-	ListContainer(Sort * function) : sort_function(function) {};
+	protected:
+	Sort * sort_function;
+	public:
+	ListContainer();
+	ListContainer(Sort * function);
 	void print();
 	void sort();
 	void swap(int i, int j);
