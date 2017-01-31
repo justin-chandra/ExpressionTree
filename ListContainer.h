@@ -4,15 +4,16 @@
 using namespace std;
 
 #include "Container.h"
+#include "Sort.h"
 #include "Base.h"
 
 class ListContainer: public Container
 {
 	ListContainer() : sort_function(NULL) {};
 	ListContainer(Sort * function) : sort_function(function) {};
-	virtual void print();
-	virtual void sort();
-	virtual void swap(int i, int j);
-	virtual Base * at(int i);
-	virtual int size();
+	void print();
+	void sort();
+	void swap(int i, int j);
+	Base * at(int i);
+	int size();
 };

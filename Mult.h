@@ -16,7 +16,7 @@ class Mult: public Base
 			this->y = y->evaluate();			
 		}
 
-		virtual double evaluate()
+		double evaluate()
 		{
 			return x * y;
 		}

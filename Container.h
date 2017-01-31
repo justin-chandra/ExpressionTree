@@ -1,3 +1,5 @@
+#include "Sort.h"
+#include "Base.h"
 #include <iostream>
 
 using namespace std;
@@ -13,7 +15,11 @@ class Container {
 		Container() : sort_function(NULL){};
 		Container(Sort* function) : sort_function(function) {};
 		/* Non Virtual Functions */
-		void set_sort_function(Sort* sort_function); // set the type of
+		void set_sort_function(Sort* sort_function)
+		{
+			
+		} 
+		// set the type of
 		//sorting algorithm
 		/* Pure Virtual Functions */
 		// push the top pointer of the tree into container
