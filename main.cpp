@@ -19,6 +19,9 @@ int main() {
 	Add* B = new Add(op3, A);
 	Sub* C = new Sub(B, op2);
 	Sqr* D = new Sqr(C);
+	
+	cout << A->evaluate() << endl;
+
 	/*
 	VectorContainer* container = new VectorContainer();
 	container->add_element(A);
