@@ -19,16 +19,15 @@ class VectorContainer: public Container
 
 	//Pure Virtual Functions 
 	//push the top pointer of the tree into container
-
 	virtual void add_element(Base* element) = 0;
-	//iterate through trees and output values
 	
+	//iterate through trees and output values
 	virtual void print() = 0;
-	//calls on previously set sorting algorithm. Checks if sort_function is not null, throw exception if otherwise
 
+	//calls on previously set sorting algorithm. Checks if sort_function is not null, throw exception if otherwise
 	virtual void sort() = 0;
 	
-	//Essentially the only functions needed to srot 
+	//Essentially the only functions needed to sort 
 	//switch tree locations
 	virtual void swap(int i, int j) = 0;
 	

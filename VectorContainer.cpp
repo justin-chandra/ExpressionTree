@@ -14,7 +14,8 @@ void set_sort_function(Sort* sort_function)
 
 void add_element(Base* element)
 {
-	//iterate through trees and output values
+	//push the top pointer of the tree into container
+	
 	return;
 }
 
