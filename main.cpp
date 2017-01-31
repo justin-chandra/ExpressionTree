@@ -24,7 +24,7 @@ int main() {
 	Sub* C = new Sub(B, op2);
 	Sqr* D = new Sqr(C);
 	
-	cout << A->evaluate() << endl;
+	cout << D->evaluate() << endl;
 
 	/*
 	VectorContainer* container = new VectorContainer();

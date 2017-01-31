@@ -12,6 +12,7 @@ class ListContainer: public Container
 	protected:
 	Sort * sort_function;
 	public:
+	list<Base*> tree;
 	ListContainer();
 	ListContainer(Sort * function);
 	void print();

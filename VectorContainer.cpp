@@ -5,6 +5,16 @@
 
 using namespace std;
 
+VectorContainer::VectorContainer()
+{
+
+}
+
+VectorContainer::VectorContainer(Sort* function)
+{
+
+}
+
 void VectorContainer::set_sort_function(Sort* sort_function)
 {
 	this->sort_function = sort_function; 	
@@ -14,24 +24,24 @@ void VectorContainer::set_sort_function(Sort* sort_function)
 void VectorContainer::add_element(Base* element)
 {
 	//push the top pointer of the tree into container
-	
+
 	return;
 }
 
 void VectorContainer::print()
 {
- /*	try
-	{
+	/*	try
+		{
 		if(sort_function == NULL)
 		{
-			throw nullSortException("Sorting Algorithm set to NULL");
+		throw nullSortException("Sorting Algorithm set to NULL");
 		}
-	}
+		}
 
-	catch (const nullSortException& exception)
-	{
+		catch (const nullSortException& exception)
+		{
 		return;
-	} */
+		} */
 
 	//iterate through tree and output values	
 	return;
@@ -48,13 +58,15 @@ void VectorContainer::swap(int i, int j)
 	//get top ptr of tree at index i
 	return;
 }
+/*
+   VectorContainer::Base* at(int i)
+   {
+   return container size
+   }
+ */
+/*
+   VectorContainer::int size()
+   {
 
-//VectorContainer::Base* at(int i)
-//{
-	//return container size
-//}
-
-/*VectorContainer::int size()
-{
-
-} */
+   }
+ */
