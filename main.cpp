@@ -18,7 +18,7 @@ int main() {
 	Mult* A = new Mult(op7, op4);
 	Add* B = new Add(op3, A);
 	Sub* C = new Sub(B, op2);
-//	Sqr* D = new Sqr(C);
+	Sqr* D = new Sqr(C);
 	/*
 	VectorContainer* container = new VectorContainer();
 	container->add_element(A);

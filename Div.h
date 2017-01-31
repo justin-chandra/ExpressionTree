@@ -3,12 +3,19 @@
 #include "Op.h"
 using namespace std;
 
-class Divide: public Base
+class Div: public Base
 {
 	public:
+		double x;
+		double y;
+		Div(Base * a, Base * b)
+		{
+			this->x = a->evaluate();
+			this->y = b->evaluate();
+		}
 		virtual double evaluate()
 		{
-			return 0;
+			return x / y;
 		}
 
 	private:
