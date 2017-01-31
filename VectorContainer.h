@@ -37,4 +37,4 @@ class VectorContainer: public Container
 	
 	//return container size
 	virtual int size() = 0;
-}
+};
