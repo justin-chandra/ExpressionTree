@@ -16,17 +16,17 @@ class SelectionSort: public Sort
 		void sort(Container * container)
 		{
 
-			int i, j, first, temp;
-			int numLength = container.size();
+			int i, j, first;
+			int numLength = container->size();
 			for (i = numLength - 1; i > 0; i--)
 			{
 				first = 0;             
 				for (j=1; j<=i; j++)  
 				{
-					if (num[j] < num[first])
+					if (container->at(i) < container->at(first))
 						first = j;
 				}
-				container.swap(first, i);
+				container->swap(first, i);
 			}
 		}
 };

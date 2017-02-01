@@ -14,7 +14,8 @@ VectorContainer::VectorContainer()
 
 VectorContainer::VectorContainer(Sort* function)
 {
-
+	//set the sort function in this an list 
+	this->sort_function = function;
 }
 
 void VectorContainer::set_sort_function(Sort* sort_function)
@@ -46,7 +47,7 @@ void VectorContainer::sort()
 	{
 		throw runtime_error("sort_function is null");
 	}
-	sort_function->sort(*this);
+	this->sort_function->sort(this);
 }
 
 void VectorContainer::swap(int i, int j)

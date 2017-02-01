@@ -13,6 +13,7 @@ using namespace std;
 #include "ListContainer.h"
 #include "Sort.h"
 #include "VectorContainer.h"
+#include "SelectionSort.h"
 
 int main() {
 	Op* op7 = new Op(7);
@@ -35,8 +36,6 @@ int main() {
 	container->print();
 	cout << "Container After Sort: " << endl;
 	container->set_sort_function(new SelectionSort());
-	/*
 	container->sort();
 	container->print();
-	*/
 };
