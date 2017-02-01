@@ -24,7 +24,7 @@ void VectorContainer::set_sort_function(Sort* sort_function)
 void VectorContainer::add_element(Base* element)
 {
 	//push the top pointer of the tree into container
-
+	v.push_back(element);
 	return;
 }
 
@@ -44,6 +44,13 @@ void VectorContainer::print()
 		} */
 
 	//iterate through tree and output values	
+	for(int k = i; k < v.size() - 2; ++i)
+	{
+		//formatting
+		//i = child, i + 1 = bottom/left child, i + 2 = top/right child
+		
+		
+	}		
 	return;
 }
 
@@ -62,10 +69,10 @@ void VectorContainer::swap(int i, int j)
 
 Base * VectorContainer::at(int i)
 {
-	return NULL;
+	return v.at(i - 1);
 }
 
 int VectorContainer::size()
 {
-	return 0;
+	return v.size();
 }
