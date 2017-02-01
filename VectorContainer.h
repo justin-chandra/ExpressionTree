@@ -2,6 +2,7 @@
 #include <vector>
 #include "Base.h"
 #include "Container.h"
+
 using namespace std;
 
 class VectorContainer: public Container
@@ -10,6 +11,7 @@ class VectorContainer: public Container
 		Sort* sort_function;
 
 	public:
+	vector<Base*> v;
 	//Constructors
 	VectorContainer();
 	VectorContainer(Sort* function); // set the type of sorting algorithm
@@ -19,21 +21,21 @@ class VectorContainer: public Container
 
 	//Pure Virtual Functions 
 	//push the top pointer of the tree into container
-	virtual void add_element(Base* element) = 0;
+	void add_element(Base* element);
 	
 	//iterate through trees and output values
-	virtual void print() = 0;
+	void print();
 
 	//calls on previously set sorting algorithm. Checks if sort_function is not null, throw exception if otherwise
-	virtual void sort() = 0;
+	void sort();
 	
 	//Essentially the only functions needed to sort 
 	//switch tree locations
-	virtual void swap(int i, int j) = 0;
+	void swap(int i, int j);
 	
 	//get top ptr of tree at index i
-	virtual Base* at(int i) = 0;
+	Base* at(int i) = 0;
 	
 	//return container size
-	virtual int size() = 0;
+	int size() = 0;
 };

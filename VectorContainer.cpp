@@ -56,7 +56,7 @@ void VectorContainer::sort()
 void VectorContainer::swap(int i, int j)
 {
 	//take a look at swap(), google it
-	swap(i, j);
+	//swap(v[i], v[j]);
 	return;
 }
 
