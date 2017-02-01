@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
-#include <exception>
+#include <stdexcept>
 #include <algorithm>
 #include "VectorContainer.h"
+#include "Sort.h"
 
 using namespace std;
 
@@ -23,48 +24,37 @@ void VectorContainer::set_sort_function(Sort* sort_function)
 
 void VectorContainer::add_element(Base* element)
 {
-	//push the top pointer of the tree into container
 	v.push_back(element);
-	return;
 }
 
 void VectorContainer::print()
 {
-	/*	try
-		{
-		if(sort_function == NULL)
-		{
-		throw nullSortException("Sorting Algorithm set to NULL");
-		}
-		}
-
-		catch (const nullSortException& exception)
-		{
-		return;
-		} */
-
 	//iterate through tree and output values	
-	for(int k = i; k < v.size() - 2; ++i)
+	for(int i = 0; i < v.size(); ++i)
 	{
 		//formatting
 		//i = child, i + 1 = bottom/left child, i + 2 = top/right child
-		
-		
-	}		
-	return;
+		cout << v.at(i)->evaluate() << " ";
+	}	
+	cout << endl;	
 }
 
 void VectorContainer::sort()
 {
 	//I'm guessing you sort with the specified sorting algorithm
-	return;
+	if (sort_function == NULL)
+	{
+		throw runtime_error("sort_function is null");
+	}
+	sort_function->sort(*this);
 }
 
 void VectorContainer::swap(int i, int j)
 {
 	//take a look at swap(), google it
-	//swap(v[i], v[j]);
-	return;
+	Base * temp = v.at(i);
+	v.at(i) = v.at(j);
+	v.at(j) = temp;
 }
 
 Base * VectorContainer::at(int i)

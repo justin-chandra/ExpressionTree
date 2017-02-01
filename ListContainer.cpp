@@ -35,11 +35,20 @@ void ListContainer::sort()
 
 void ListContainer::swap(int i, int j)
 {
-
+	
 }
 
 Base * ListContainer::at(int i)
 {
+	for (list<Base*>::const_iterator iterator = tree.begin(); iterator != tree.end(); ++iterator)
+	{
+		int j = 0;
+		if (i == j)
+		{
+			return *iterator;
+		}	
+		++i;
+	}
 	return NULL;
 }
 

@@ -26,7 +26,6 @@ int main() {
 	
 	cout << D->evaluate() << endl;
 
-	/*
 	VectorContainer* container = new VectorContainer();
 	container->add_element(A);
 	container->add_element(B);
@@ -36,6 +35,7 @@ int main() {
 	container->print();
 	cout << "Container After Sort: " << endl;
 	container->set_sort_function(new SelectionSort());
+	/*
 	container->sort();
 	container->print();
 	*/

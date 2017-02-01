@@ -2,6 +2,7 @@
 #include <vector>
 #include "Base.h"
 #include "Container.h"
+#include "Sort.h"
 
 using namespace std;
 
@@ -34,8 +35,8 @@ class VectorContainer: public Container
 	void swap(int i, int j);
 	
 	//get top ptr of tree at index i
-	Base* at(int i) = 0;
+	Base* at(int i);
 	
 	//return container size
-	int size() = 0;
+	int size();
 };
