@@ -4,12 +4,21 @@
 
 using namespace std;
 
+#ifndef B
+#define B
+
 class Container;
 
 class BubbleSort: public Sort
 {
 	public:
-	void BubbleSort(Container * container)
+
+	BubbleSort()
+	{
+
+	}
+
+	void sort(Container * container)
 	{
 		int flag = 1; //flag is set to 1 to begin first pass
 		int holder = 0; //holds variable
@@ -29,7 +38,8 @@ class BubbleSort: public Sort
 				}
 			} 
 		}
-		return; 
 	}
 
 };
+
+#endif

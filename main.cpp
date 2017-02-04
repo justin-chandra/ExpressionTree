@@ -14,6 +14,7 @@ using namespace std;
 #include "Sort.h"
 #include "VectorContainer.h"
 #include "SelectionSort.h"
+#include "BubbleSort.h"
 
 int main() {
 	Op* op7 = new Op(7);
