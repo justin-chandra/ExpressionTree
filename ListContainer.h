@@ -6,11 +6,13 @@ using namespace std;
 #include "Container.h"
 #include "Sort.h"
 #include "Base.h"
+#include "SelectionSort.h"
+
+#ifndef L
+#define L
 
 class ListContainer: public Container
 {
-	protected:
-	Sort * sort_function;
 	public:
 	list<Base*>tree;
 	ListContainer();
@@ -22,3 +24,5 @@ class ListContainer: public Container
 	Base * at(int i);
 	int size();
 };
+
+#endif

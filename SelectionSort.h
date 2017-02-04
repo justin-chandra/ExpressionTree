@@ -1,8 +1,10 @@
 #include <iostream>
 
 using namespace std;
-
 #include "Sort.h"
+
+#ifndef SS
+#define SS
 
 class Container;
 class SelectionSort: public Sort 
@@ -21,7 +23,7 @@ class SelectionSort: public Sort
 			for (i = numLength - 1; i > 0; i--)
 			{
 				first = 0;             
-				for (j=1; j<=i; j++)  
+				for (j = 1; j <= i; j++)  
 				{
 					if (container->at(i) < container->at(first))
 						first = j;
@@ -30,3 +32,5 @@ class SelectionSort: public Sort
 			}
 		}
 };
+
+#endif

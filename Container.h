@@ -7,6 +7,7 @@ using namespace std;
 #ifndef CONT
 #define CONT
 
+//class SelectionSort;
 class Container {
 	protected:
 		Sort* sort_function;
