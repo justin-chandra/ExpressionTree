@@ -14,7 +14,7 @@ class SelectionSort: public Sort
 		{
 
 		}
-		
+
 		void sort(Container * container)
 		{
 
@@ -26,7 +26,9 @@ class SelectionSort: public Sort
 				for (j = 1; j <= i; j++)  
 				{
 					if (container->at(i) < container->at(first))
+					{
 						first = j;
+					}
 				}
 				container->swap(first, i);
 			}

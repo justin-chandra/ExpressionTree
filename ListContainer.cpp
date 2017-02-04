@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <List>
+#include <algorithm>
 
 using namespace std;
 
@@ -46,13 +47,25 @@ void ListContainer::sort()
 	{
 		throw runtime_error("sort_function is null");
 	}
+	sort_function->sort(this);
 }
 
+/*
 void ListContainer::swap(int i, int j)
 {
-	cout << "stuff" << endl;	
-}
+	list<Base*>::const_iterator iterator = tree.begin();
+	while ((*iterator)->evaluate() != i)
+	{
+		++iterator;	
+	}
 
+	list<Base*>::const_iterator it = tree.begin();
+	while ((*it)->evaluate() != j)
+	{
+		++it;
+	}
+}
+*/
 Base * ListContainer::at(int i)
 {
 	for (list<Base*>::const_iterator iterator = tree.begin(); iterator != tree.end(); ++iterator)
@@ -65,6 +78,26 @@ Base * ListContainer::at(int i)
 		++i;
 	}
 	return NULL;
+}
+
+void ListContainer::swap(int i, int j)
+{	
+	list<Base*>::iterator first = tree.begin();
+	list<Base*>::iterator second = tree.begin();
+	while ((*first)->evaluate() != i)
+	{
+		++first;
+	}
+	while ((*second)->evaluate() != j)
+	{
+		++second;
+	}
+	/*
+	list<Base*>::iterator temp = first;
+	first = second;
+	second = temp;
+	*/
+	iter_swap(first, second);
 }
 
 int ListContainer::size()

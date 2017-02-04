@@ -60,7 +60,7 @@ void VectorContainer::swap(int i, int j)
 
 Base * VectorContainer::at(int i)
 {
-	return v.at(i - 1);
+	return v.at(i);
 }
 
 int VectorContainer::size()
