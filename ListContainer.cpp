@@ -69,16 +69,12 @@ void ListContainer::swap(int i, int j)
 */
 Base * ListContainer::at(int i)
 {
-	for (list<Base*>::const_iterator iterator = tree.begin(); iterator != tree.end(); ++iterator)
+	list<Base*>::iterator it = tree.begin();
+	for (unsigned j = 0; j < i; ++j)
 	{
-		int j = 0;
-		if (i == j)
-		{
-			return *iterator;
-		}	
-		++i;
+		++it;
 	}
-	return NULL;
+	return *it;
 }
 
 void ListContainer::swap(int i, int j)
