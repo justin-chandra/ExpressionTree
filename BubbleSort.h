@@ -19,7 +19,7 @@ class BubbleSort: public Sort
 		void sort(Container * container)
 		{
 			int flag = 1; //flag is set to 1 to begin first pass
-			int holder = 0; //holds variable
+			//int holder = 0; //holds variable
 			int size = container->size(); //length of Vector
 
 			for (int i = 1; (i <= size) && flag; ++i)
