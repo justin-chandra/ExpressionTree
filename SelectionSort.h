@@ -25,13 +25,14 @@ class SelectionSort: public Sort
 				first = 0;             
 				for (j = 1; j <= i; j++)  
 				{
-					if (container->at(i) < container->at(first))
+					if (container->at(j) < container->at(first))
 					{
 						first = j;
 					}
 				}
 				container->swap(first, i);
 			}
+			cout << "Num Length: " << numLength << endl;
 		}
 };
 
