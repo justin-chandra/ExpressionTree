@@ -82,7 +82,20 @@ Base * ListContainer::at(int i)
 
 void ListContainer::swap(int i, int j)
 {	
-	//stuff from at
+	int k = 0;
+	int l = 0;
+	list<Base*>::iterator first = tree.begin();
+	list<Base*>::iterator second = first;
+	while (k < i)
+	{
+		++k;
+		++first;	
+	}
+	while (l < j)
+	{
+		++l;
+		++second;
+	}
 	iter_swap(first, second);
 }
 

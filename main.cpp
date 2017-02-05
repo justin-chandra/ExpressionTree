@@ -13,8 +13,8 @@ using namespace std;
 #include "ListContainer.h"
 #include "Sort.h"
 #include "VectorContainer.h"
-#include "SelectionSort.h"
-#include "BubbleSort.h"
+//#include "SelectionSort.h"
+//#include "BubbleSort.h"
 
 int main() {
 	Op* op7 = new Op(7);
@@ -28,7 +28,7 @@ int main() {
 	
 	cout << D->evaluate() << endl;
 
-	VectorContainer * container = new VectorContainer();
+	ListContainer * container = new ListContainer();
 	container->add_element(A);
 	container->add_element(B);
 	container->add_element(C);

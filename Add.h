@@ -4,6 +4,9 @@
 
 using namespace std;
 
+#ifndef ADD
+#define ADD
+
 class Add: public Base 
 {
 	public:
@@ -20,3 +23,5 @@ class Add: public Base
 			return x + y;
 		}
 };
+
+#endif
