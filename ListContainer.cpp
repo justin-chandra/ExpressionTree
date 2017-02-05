@@ -37,8 +37,9 @@ void ListContainer::print()
 {
 	for (list<Base*>::iterator it = tree.begin(); it != tree.end(); ++it)
 	{
-		cout << (*it)->evaluate() << endl;
+		cout << (*it)->evaluate() << " ";
 	}
+	cout << endl;
 }
 
 void ListContainer::sort()
