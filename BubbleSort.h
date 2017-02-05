@@ -32,7 +32,7 @@ class BubbleSort: public Sort
 						//holder = container->at(j);
 						//container->at(j) = container->at(j + 1);
 						//container->at(j + 1) = holder;
-						swap(j, j + 1);
+						//swap(j, j + 1);
 						flag = 1; //swap has occured
 					}
 				} 
