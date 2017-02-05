@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdexcept>
-#include <List>
+#include <list>
 #include <algorithm>
 
 using namespace std;
