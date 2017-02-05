@@ -32,7 +32,6 @@ class SelectionSort: public Sort
 				}
 				container->swap(first, i);
 			}
-			cout << "Num Length: " << numLength << endl;
 		}
 };
 

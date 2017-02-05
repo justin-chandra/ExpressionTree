@@ -102,6 +102,7 @@ void ListContainer::swap(int i, int j)
 
 int ListContainer::size()
 {
+	cout << tree.size() << endl;
 	return tree.size();
 }
 
