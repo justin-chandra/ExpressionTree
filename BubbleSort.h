@@ -29,10 +29,7 @@ class BubbleSort: public Sort
 			   	{	
 			   		if (container->at(j + 1) > container->at(j))
 			   		{
-						//holder = container->at(j);
-						//container->at(j) = container->at(j + 1);
-						//container->at(j + 1) = holder;
-						//swap(j, j + 1);
+						container->swap(j, j + 1);
 						flag = 1; //swap has occured
 					}
 				} 
