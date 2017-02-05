@@ -28,7 +28,7 @@ int main() {
 	
 	cout << D->evaluate() << endl;
 
-	ListContainer * container = new ListContainer();
+	VectorContainer * container = new VectorContainer();
 	container->add_element(A);
 	container->add_element(B);
 	container->add_element(C);
@@ -36,7 +36,7 @@ int main() {
 	cout << "Container Before Sort: " << endl;
 	container->print();
 	cout << "Container After Sort: " << endl;
-	container->set_sort_function(new SelectionSort());
+	container->set_sort_function(new BubbleSort());
 	container->sort();
 	container->print();
 };

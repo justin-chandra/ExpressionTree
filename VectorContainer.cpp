@@ -32,7 +32,7 @@ void VectorContainer::add_element(Base* element)
 void VectorContainer::print()
 {
 	//iterate through tree and output values	
-	for(int i = 0; i < v.size(); ++i)
+	for(unsigned i = 0; i < v.size(); ++i)
 	{
 		//formatting
 		//i = child, i + 1 = bottom/left child, i + 2 = top/right child

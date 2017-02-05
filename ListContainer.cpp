@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdexcept>
-#include <List>
+#include <list>
 #include <algorithm>
 
 using namespace std;
@@ -98,6 +98,7 @@ void ListContainer::swap(int i, int j)
 
 int ListContainer::size()
 {
+	cout << tree.size() << endl;
 	return tree.size();
 }
 
