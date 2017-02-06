@@ -7,6 +7,7 @@ using namespace std;
 
 #include "ListContainer.h"
 #include "SelectionSort.h"
+#include "BubbleSort.h"
 #include "Sort.h"
 #include "Base.h"
 /*
@@ -70,7 +71,7 @@ void ListContainer::swap(int i, int j)
 Base * ListContainer::at(int i)
 {
 	list<Base*>::iterator it = tree.begin();
-	for (unsigned j = 0; j < i; ++j)
+	for (int j = 0; j < i; ++j)
 	{
 		++it;
 	}
@@ -98,7 +99,6 @@ void ListContainer::swap(int i, int j)
 
 int ListContainer::size()
 {
-	cout << tree.size() << endl;
 	return tree.size();
 }
 

@@ -5,6 +5,7 @@
 #include "VectorContainer.h"
 #include "Sort.h"
 #include "BubbleSort.h"
+#include "SelectionSort.h"
 
 using namespace std;
 

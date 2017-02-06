@@ -3,13 +3,15 @@
 #include "Base.h"
 #include "Container.h"
 #include "Sort.h"
+#include "BubbleSort.h"
+#include "SelectionSort.h"
 
 using namespace std;
 
 class VectorContainer: public Container
 {
 	protected:
-	//	Sort* sort_function;
+		Sort* sort_function;
 
 	public:
 		vector<Base*> v;

@@ -7,6 +7,7 @@ using namespace std;
 #include "Sort.h"
 #include "Base.h"
 #include "SelectionSort.h"
+#include "BubbleSort.h"
 
 #ifndef L
 #define L

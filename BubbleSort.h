@@ -1,16 +1,15 @@
 #include <iostream>
-#include "Sort.h"
 
 using namespace std;
+#include "Sort.h"
 
-#ifndef B
-#define B
+#ifndef Bubble
+#define Bubble
 
 class Container;
 class BubbleSort: public Sort
 {
 	public:
-
 		BubbleSort()
 		{
 
@@ -25,16 +24,16 @@ class BubbleSort: public Sort
 			for (int i = 1; (i <= size) && flag; ++i)
 			{
 				flag = 0;
-			   	for (int j = 0; j < size; ++j)
-			   	{	
-			   		if (container->at(j + 1) > container->at(j))
-			   		{
+				for (int j = 0; j < size; ++j)
+				{	
+					if (container->at(j + 1) > container->at(j))
+					{
 						container->swap(j, j + 1);
 						flag = 1; //swap has occured
 					}
 				} 
 			}
-		
+
 		}
 
 };
