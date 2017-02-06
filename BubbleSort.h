@@ -24,9 +24,9 @@ class BubbleSort: public Sort
 			for (int i = 1; (i <= size) && flag; ++i)
 			{
 				flag = 0;
-				for (int j = 0; j < size; ++j)
+				for (int j = 0; j < (size - 1); ++j)
 				{	
-					if (container->at(j + 1) > container->at(j))
+					if ((container->at(j + 1)->evaluate()) > (container->at(j)->evaluate()))
 					{
 						container->swap(j, j + 1);
 						flag = 1; //swap has occured
