@@ -13,10 +13,13 @@ using namespace std;
 #include "ListContainer.h"
 #include "Sort.h"
 #include "VectorContainer.h"
+
+#include "Abs.h"
 //#include "SelectionSort.h"
 //#include "BubbleSort.h"
 
 int main() {
+	/*
 	Op* op7 = new Op(7);
 	Op* op4 = new Op(4);
 	Op* op3 = new Op(3);
@@ -37,9 +40,16 @@ int main() {
 	cout << "Container Before Sort: " << endl;
 	container->print();
 	cout << "Container After Sort: " << endl;
-	//container->set_sort_function(new SelectionSort());
+	container->set_sort_function(new SelectionSort());
 	//BubbleSort * b = new BubbleSort();
-	container->set_sort_function(new BubbleSort());
+	//container->set_sort_function(new BubbleSort());
 	container->sort();
 	container->print();
+	*/
+	Op * op1 = new Op(1.6);
+	Op * op2 = new Op(1.3);
+	Op * op3 = new Op(-1.0);
+
+	Abs * abs1 = new Abs(op1);
+	cout << abs1->evaluate() << endl;
 };
