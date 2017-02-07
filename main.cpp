@@ -21,7 +21,6 @@ using namespace std;
 //#include "BubbleSort.h"
 
 int main() {
-	/*
 	Op* op7 = new Op(7);
 	Op* op4 = new Op(4);
 	Op* op3 = new Op(3);
@@ -47,7 +46,7 @@ int main() {
 	//container->set_sort_function(new BubbleSort());
 	container->sort();
 	container->print();
-	*/
+	/*
 	Op * op1 = new Op(1.6);
 	Op * op2 = new Op(1.3);
 	Op * op3 = new Op(-1.0);
@@ -60,6 +59,6 @@ int main() {
 
 	Abs * abs3 = new Abs(op3);
 	cout << abs3->evaluate() << endl;
-
+	*/
 	return 0;
 };
