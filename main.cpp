@@ -14,6 +14,8 @@ using namespace std;
 #include "Sort.h"
 #include "VectorContainer.h"
 
+#include "Ceil.h"
+#include "Floor.h"
 #include "Abs.h"
 //#include "SelectionSort.h"
 //#include "BubbleSort.h"
