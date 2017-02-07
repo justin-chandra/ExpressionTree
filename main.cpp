@@ -13,6 +13,9 @@ using namespace std;
 #include "ListContainer.h"
 #include "Sort.h"
 #include "VectorContainer.h"
+#include "Ceil.h"
+#include "Floor.h"
+#include "Abs.h"
 //#include "SelectionSort.h"
 //#include "BubbleSort.h"
 
