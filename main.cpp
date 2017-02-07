@@ -52,6 +52,14 @@ int main() {
 	Op * op2 = new Op(1.3);
 	Op * op3 = new Op(-1.0);
 
-	Abs * abs1 = new Abs(op1);
-	cout << abs1->evaluate() << endl;
+	Floor * f1 = new Floor(op1);
+	cout << f1->evaluate() << endl;
+
+	Ceil * c2 = new Ceil(op2);
+	cout << c2->evaluate() << endl;
+
+	Abs * abs3 = new Abs(op3);
+	cout << abs3->evaluate() << endl;
+
+	return 0;
 };

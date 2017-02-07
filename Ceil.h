@@ -4,7 +4,7 @@
 #include "Op.h"
 using namespace std;
 
-class Ceil: Base public
+class Ceil: public Base
 {
 	public:
 		double x;

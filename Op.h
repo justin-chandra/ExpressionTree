@@ -11,7 +11,7 @@ class Op: public Base
 {
 	public:
 	double x;
-		Op(int x)
+		Op(double x)
 		{
 			this->x = x;
 		}
